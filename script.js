@@ -454,7 +454,7 @@ updateChampsProfil();
     const typeChoisi = elType.value;
     let options = "<option>— Choisir —</option>";
 
-    // Liste complète des éditeurs
+    // Liste complète des éditeurs triée
     const tous = allEditeurs
       .slice()
       .sort((a, b) => a.localeCompare(b, "fr", { sensitivity: "base" }));
@@ -470,11 +470,17 @@ updateChampsProfil();
     // Liste des éditeurs non identifiés
     const nonIdentifiés = tous.filter((e) => !triésAssociés.includes(e));
 
-    // Ajout des options dans l’ordre souhaité
+    // Ajout des éditeurs associés
     triésAssociés.forEach(function (editeur) {
       options += `<option>${editeur}</option>`;
     });
 
+    // Ajout d'une séparation visuelle
+    if (triésAssociés.length > 0 && nonIdentifiés.length > 0) {
+      options += `<option disabled>— Autres éditeurs —</option>`;
+    }
+
+    // Ajout des éditeurs non identifiés
     nonIdentifiés.forEach(function (editeur) {
       options += `<option>${editeur}</option>`;
     });
