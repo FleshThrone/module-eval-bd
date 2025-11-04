@@ -451,8 +451,12 @@ updateChampsProfil();
 
   // Fonction pour mettre à jour la liste des éditeurs
   function updateEditeurs() {
-    const typeChoisi = elType?.value || "franco-belge"; // valeur par défaut
+    const elType = document.querySelector("#type");
+    const elEditeur = document.querySelector("#editeur");
+    const typeChoisi = elType?.value || "franco-belge";
+
     let options = "<option>— Choisir —</option>";
+
     const associés = editeursParType[typeChoisi] || [];
     const triésAssociés = associés
       .slice()
@@ -473,19 +477,14 @@ updateChampsProfil();
       options += `<option disabled>— Autres éditeurs —</option>`;
       options += `<option disabled>──────────────</option>`;
     }
-
     // Ajout des éditeurs non identifiés
     nonIdentifiés.forEach((editeur) => {
       options += `<option>${editeur}</option>`;
     });
-
-    console.log("Type choisi :", typeChoisi);
-    console.log("Éditeurs associés :", triésAssociés);
-    console.log("Éditeurs non identifiés :", nonIdentifiés);
-    console.log("Options générées :", options);
-
     elEditeur.innerHTML = options;
   }
+  document.querySelector("#type").addEventListener("change", updateEditeurs);
+  window.addEventListener("DOMContentLoaded", updateEditeurs);
   // Mets à jour la liste des éditeurs quand le type change
   elType.addEventListener("change", updateEditeurs);
 
