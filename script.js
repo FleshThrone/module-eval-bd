@@ -454,37 +454,31 @@ updateChampsProfil();
     const typeChoisi = elType.value;
     let options = "<option>— Choisir —</option>";
 
-    if (editeursParType[typeChoisi]) {
-      const filtered = editeursParType[typeChoisi]
-        .slice()
-        .sort((a, b) => a.localeCompare(b, "fr", { sensitivity: "base" }));
+    // Liste des éditeurs associés au type
+    const associés = editeursParType[typeChoisi] || [];
 
-      const others = allEditeurs
-        .filter((e) => !filtered.includes(e))
-        .sort((a, b) => a.localeCompare(b, "fr", { sensitivity: "base" }));
+    // Liste des éditeurs non identifiés
+    const nonIdentifiés = allEditeurs.filter((e) => !associés.includes(e));
 
-      // Ajoute d’abord les éditeurs associés au type
-      filtered.forEach(function (editeur) {
-        options += `<option>${editeur}</option>`;
-      });
+    // Tri alphabétique
+    const triésAssociés = associés
+      .slice()
+      .sort((a, b) => a.localeCompare(b, "fr", { sensitivity: "base" }));
+    const triésNonIdentifiés = nonIdentifiés
+      .slice()
+      .sort((a, b) => a.localeCompare(b, "fr", { sensitivity: "base" }));
 
-      // Puis les éditeurs non identifiés
-      others.forEach(function (editeur) {
-        options += `<option>${editeur}</option>`;
-      });
-    } else {
-      // Si aucun type choisi, affiche tous les éditeurs triés
-      allEditeurs
-        .slice()
-        .sort((a, b) => a.localeCompare(b, "fr", { sensitivity: "base" }))
-        .forEach(function (editeur) {
-          options += `<option>${editeur}</option>`;
-        });
-    }
+    // Ajout des options dans l’ordre souhaité
+    triésAssociés.forEach(function (editeur) {
+      options += `<option>${editeur}</option>`;
+    });
+    triésNonIdentifiés.forEach(function (editeur) {
+      options += `<option>${editeur}</option>`;
+    });
 
+    // Injection dans le menu déroulant
     elEditeur.innerHTML = options;
   }
-
   // Mets à jour la liste des éditeurs quand le type change
   elType.addEventListener("change", updateEditeurs);
 
