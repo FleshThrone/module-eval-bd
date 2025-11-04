@@ -451,41 +451,39 @@ updateChampsProfil();
 
   // Fonction pour mettre à jour la liste des éditeurs
   function updateEditeurs() {
-    const typeChoisi = elType.value;
+    const typeChoisi = elType?.value || "franco-belge"; // valeur par défaut
     let options = "<option>— Choisir —</option>";
-
-    // Liste complète des éditeurs triée
-    const tous = allEditeurs
-      .slice()
-      .sort((a, b) => a.localeCompare(b, "fr", { sensitivity: "base" }));
-
-    // Liste des éditeurs associés au type
     const associés = editeursParType[typeChoisi] || [];
-
-    // Tri des associés
     const triésAssociés = associés
       .slice()
       .sort((a, b) => a.localeCompare(b, "fr", { sensitivity: "base" }));
-
-    // Liste des éditeurs non identifiés
-    const nonIdentifiés = tous.filter((e) => !triésAssociés.includes(e));
+    const triésTous = allEditeurs
+      .slice()
+      .sort((a, b) => a.localeCompare(b, "fr", { sensitivity: "base" }));
+    const nonIdentifiés = triésTous.filter((e) => !triésAssociés.includes(e));
 
     // Ajout des éditeurs associés
-    triésAssociés.forEach(function (editeur) {
+    triésAssociés.forEach((editeur) => {
       options += `<option>${editeur}</option>`;
     });
 
-    // Ajout d'une séparation visuelle
+    // Séparation visuelle
     if (triésAssociés.length > 0 && nonIdentifiés.length > 0) {
+      options += `<option disabled>──────────────</option>`;
       options += `<option disabled>— Autres éditeurs —</option>`;
+      options += `<option disabled>──────────────</option>`;
     }
 
     // Ajout des éditeurs non identifiés
-    nonIdentifiés.forEach(function (editeur) {
+    nonIdentifiés.forEach((editeur) => {
       options += `<option>${editeur}</option>`;
     });
 
-    // Injection dans le menu déroulant
+    console.log("Type choisi :", typeChoisi);
+    console.log("Éditeurs associés :", triésAssociés);
+    console.log("Éditeurs non identifiés :", nonIdentifiés);
+    console.log("Options générées :", options);
+
     elEditeur.innerHTML = options;
   }
   // Mets à jour la liste des éditeurs quand le type change
