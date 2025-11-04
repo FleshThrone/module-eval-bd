@@ -1,0 +1,193 @@
+<option>� Choisir �</option>
+<option>12 Bis</option>
+<option>21g</option>
+<option>6 pieds sous terre</option>
+<option>9e Store</option>
+<option>Ça et Là</option>
+<option>Actes Sud</option>
+<option>Akata</option>
+<option>Akileos</option>
+<option>Albert René</option>
+<option>Albin Michel</option>
+<option>Allary éditions</option>
+<option>Ankama</option>
+<option>Apocalypse</option>
+<option>Arenes</option>
+<option>Art & BD</option>
+<option>Atrabile</option>
+<option>Bamboo</option>
+<option>BD Cul</option>
+<option>BD Must</option>
+<option>Bigfoot</option>
+<option>Bigger Boat</option>
+<option>Black & White</option>
+<option>Bliss Comics</option>
+<option>Booken Manga</option>
+<option>Bruno Graff</option>
+<option>Cambourakis</option>
+<option>Casterman</option>
+<option>Cerises & Coquelicots</option>
+<option>Charrette</option>
+<option>Cinebook</option>
+<option>Clair de lune</option>
+<option>Comics USA</option>
+<option>Comix Buro</option>
+<option>Cornélius</option>
+<option>Daniel Maghen</option>
+<option>Dargaud</option>
+<option>Delcourt</option>
+<option>Denoël Graphics</option>
+<option>Des Ronds Dans l'O</option>
+<option>Diabolo</option>
+<option>Drakoo</option>
+<option>Dupuis</option>
+<option>Dynamite</option>
+<option>Ego comme X</option>
+<option>Eyrolles</option>
+<option>Félés</option>
+<option>Fei</option>
+<option>FLBLB</option>
+<option>Fleurus</option>
+<option>Fluide Glacial</option>
+<option>French Eyes</option>
+<option>Frimousse</option>
+<option>Futuropolis</option>
+<option>Gallimard BD</option>
+<option>Glénat</option>
+<option>Golden Creek Studio</option>
+<option>Grand Angle</option>
+<option>Graton</option>
+<option>Hachette</option>
+<option>Hazan</option>
+<option>Hexagon Comics</option>
+<option>Hors Collection</option>
+<option>Hot Manga</option>
+<option>Huginn & Muninn</option>
+<option>Idées Plus</option>
+<option>Imho</option>
+<option>J'Ai Lu</option>
+<option>Jungle</option>
+<option>Jyb Aventures</option>
+<option>Kami</option>
+<option>Kana</option>
+<option>Kantik</option>
+<option>Kazé</option>
+<option>Kennes Editions</option>
+<option>Ki-oon</option>
+<option>Komikku</option>
+<option>Kotoji</option>
+<option>Kramiek</option>
+<option>Kurokawa</option>
+<option>Kwari</option>
+<option>Kymera</option>
+<option>La Boîte à bulles</option>
+<option>La Cinquième Couche</option>
+<option>La Pastèque</option>
+<option>L'An 2</option>
+<option>Lapin</option>
+<option>L'association</option>
+<option>L'Association</option>
+<option>Le Cycliste</option>
+<option>Le Lézard Noir</option>
+<option>Le Lombard</option>
+<option>Le Moule A Gaufres</option>
+<option>Le Téméraire</option>
+<option>Leblon Delienne</option>
+<option>L'Employé du Moi</option>
+<option>L'employé du Moi</option>
+<option>Les éditions Paquet</option>
+<option>Les Échappés</option>
+<option>Les Deux Royaumes</option>
+<option>Les Enfants Rouges</option>
+<option>Les Enfants Rouges</option>
+<option>Les Humanoïdes Associés</option>
+<option>Les Rêveurs</option>
+<option>Les Rêveurs</option>
+<option>Les Requins Marteaux</option>
+<option>Lombard</option>
+<option>Long Bec</option>
+<option>Loup</option>
+<option>Lucky Comics</option>
+<option>Lug</option>
+<option>Même pas mal</option>
+<option>Magic Strip</option>
+<option>Makaka</option>
+<option>Manolosanctis</option>
+<option>Marabout</option>
+<option>Marsu Productions</option>
+<option>Marvel France</option>
+<option>Michel LAFON</option>
+<option>Milady Graphics</option>
+<option>Milan</option>
+<option>Misma</option>
+<option>Monsieur Pop Corn</option>
+<option>Mosquito</option>
+<option>Moulinsart</option>
+<option>Nickel</option>
+<option>Niffle</option>
+<option>Niho Niba</option>
+<option>Nobi Nobi</option>
+<option>Nobrow</option>
+<option>Norma</option>
+<option>Novedi</option>
+<option>Nuclea</option>
+<option>Original Watts</option>
+<option>Ototo</option>
+<option>Panini Comics</option>
+<option>Petit à petit</option>
+<option>Petit Pierre & Ieiazel</option>
+<option>Physalis</option>
+<option>Pika</option>
+<option>Pixi</option>
+<option>Plastoy</option>
+<option>Pocket</option>
+<option>Point Image</option>
+<option>Poivre Et Sel</option>
+<option>Presque lune</option>
+<option>Presse Aventure</option>
+<option>P'Tit Glenat</option>
+<option>P'Tit Louis</option>
+<option>Rackham</option>
+<option>Rebecca Rils</option>
+<option>Rombaldi</option>
+<option>Rue De Sèvres</option>
+<option>Samji</option>
+<option>Sandawe</option>
+<option>Sarbacane</option>
+<option>Seikô</option>
+<option>Semic</option>
+<option>Sergio Bonelli Editore</option>
+<option>Seuil</option>
+<option>Six Pieds Sous Terre</option>
+<option>Snorgleux</option>
+<option>Société Parisienne D'Édition</option>
+<option>Soleil</option>
+<option>Steinkis</option>
+<option>Tabary</option>
+<option>Tabou</option>
+<option>Taifu Comics</option>
+<option>Tanibis</option>
+<option>Tapages Nocturnes</option>
+<option>Tartamudo</option>
+<option>Theloma</option>
+<option>Tonkam</option>
+<option>Toth Bd</option>
+<option>Triomphe</option>
+<option>Urban China</option>
+<option>Urban Comics</option>
+<option>Urban Comics Press</option>
+<option>Usa Vagabondages</option>
+<option>Vents d'Ouest</option>
+<option>Vertige Graphic</option>
+<option>Vide Cocagne</option>
+<option>Vide Cocagne</option>
+<option>Vraoum</option>
+<option>Vraoum !</option>
+<option>Warum</option>
+<option>Wetta</option>
+<option>Worldwide</option>
+<option>Xiao Pan</option>
+<option>Zanpano</option>
+<option>Zenda</option>
+<option>Zephyr</option>
+<option>Zephyr</option>

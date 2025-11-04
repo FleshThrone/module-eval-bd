@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+  <head>
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module BD</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <h1>
+        Acheter ou vendre des BD, mangas ou comics au prix le plus juste !
+      </h1>
+    </header>
+
+    <main class="container">
+      <form id="form-agentbd" novalidate>
+        <!-- Infos objet -->
+        <section aria-labelledby="sec-objet">
+          <h2 id="sec-objet">🎯 Infos sur l’objet</h2>
+          <div class="grid">
+            <div class="field">
+              <label for="type">Type</label>
+
+              <select id="type" name="type">
+                <option>— Choisir —</option>
+                <option value="franco-belge">Franco-belge</option>
+                <option value="mangas">Mangas</option>
+                <option value="comics">Comics</option>
+              </select>
+            </div>
+            <div class="field">
+  <label for="auteur">Auteur</label>
+  <input type="text" id="auteur" name="auteur" placeholder="Nom de l'auteur" />
+</div>
+            <div class="field">
+              <label for="editeur">Éditeur</label>
+              <select id="editeur" name="editeur">
+                <option>— Choisir —</option>
+                <option>12 Bis</option>
+                <option>21g</option>
+                <option>6 pieds sous terre</option>
+                <option>9e Store</option>
+                <option>Actes Sud</option>
+                <option>Akata</option>
+                <option>Akileos</option>
+                <option>Albert René</option>
+                <option>Albin Michel</option>
+                <option>Allary éditions</option>
+                <option>Ankama</option>
+                <option>Apocalypse</option>
+                <option>Arenes</option>
+                <option>Art & BD</option>
+                <option>Atrabile</option>
+                <option>Bamboo</option>
+                <option>BD Cul</option>
+                <option>BD Must</option>
+                <option>Bigfoot</option>
+                <option>Bigger Boat</option>
+                <option>Black & White</option>
+                <option>Bliss Comics</option>
+                <option>Booken Manga</option>
+                <option>Bruno Graff</option>
+                <option>Cambourakis</option>
+                <option>Casterman</option>
+                <option>Cerises & Coquelicots</option>
+                <option>Charrette</option>
+                <option>Cinebook</option>
+                <option>Clair de lune</option>
+                <option>Comics USA</option>
+                <option>Comix Buro</option>
+                <option>Cornélius</option>
+                <option>Daniel Maghen</option>
+                <option>Dargaud</option>
+                <option>Delcourt</option>
+                <option>Denoël Graphics</option>
+                <option>Des Ronds Dans l'O</option>
+                <option>Diabolo</option>
+                <option>Drakoo</option>
+                <option>Dupuis</option>
+                <option>Dynamite</option>
+                <option>Ego comme X</option>
+                <option>Eyrolles</option>
+                <option>Félés</option>
+                <option>Fei</option>
+                <option>FLBLB</option>
+                <option>Fleurus</option>
+                <option>Fluide Glacial</option>
+                <option>French Eyes</option>
+                <option>Frimousse</option>
+                <option>Futuropolis</option>
+                <option>Gallimard BD</option>
+                <option>Glénat</option>
+                <option>Golden Creek Studio</option>
+                <option>Grand Angle</option>
+                <option>Graton</option>
+                <option>Hachette</option>
+                <option>Hazan</option>
+                <option>Hexagon Comics</option>
+                <option>Hors Collection</option>
+                <option>Hot Manga</option>
+                <option>Huginn & Muninn</option>
+                <option>Idées Plus</option>
+                <option>Imho</option>
+                <option>J'Ai Lu</option>
+                <option>Jungle</option>
+                <option>Jyb Aventures</option>
+                <option>Kami</option>
+                <option>Kana</option>
+                <option>Kantik</option>
+                <option>Kazé</option>
+                <option>Kennes Editions</option>
+                <option>Ki-oon</option>
+                <option>Komikku</option>
+                <option>Kotoji</option>
+                <option>Kramiek</option>
+                <option>Kurokawa</option>
+                <option>Kwari</option>
+                <option>Kymera</option>
+                <option>La Boîte à bulles</option>
+                <option>La Cinquième Couche</option>
+                <option>La Pastèque</option>
+                <option>L'An 2</option>
+                <option>Lapin</option>
+                <option>L'association</option>
+                <option>L'Association</option>
+                <option>Le Cycliste</option>
+                <option>Le Lézard Noir</option>
+                <option>Le Lombard</option>
+                <option>Le Moule A Gaufres</option>
+                <option>Le Téméraire</option>
+                <option>Leblon Delienne</option>
+                <option>L'Employé du Moi</option>
+                <option>L'employé du Moi</option>
+                <option>Les éditions Paquet</option>
+                <option>Les Échappés</option>
+                <option>Les Deux Royaumes</option>
+                <option>Les Enfants Rouges</option>
+                <option>Les Humanoïdes Associés</option>
+                <option>Les Requins Marteaux</option>
+                <option>Les Rêveurs</option>
+                <option>Lombard</option>
+                <option>Long Bec</option>
+                <option>Loup</option>
+                <option>Lucky Comics</option>
+                <option>Lug</option>
+                <option>Même pas mal</option>
+                <option>Magic Strip</option>
+                <option>Makaka</option>
+                <option>Manolosanctis</option>
+                <option>Marabout</option>
+                <option>Marsu Productions</option>
+                <option>Marvel France</option>
+                <option>Michel LAFON</option>
+                <option>Milady Graphics</option>
+                <option>Milan</option>
+                <option>Misma</option>
+                <option>Monsieur Pop Corn</option>
+                <option>Mosquito</option>
+                <option>Moulinsart</option>
+                <option>Nickel</option>
+                <option>Niffle</option>
+                <option>Niho Niba</option>
+                <option>Nobi Nobi</option>
+                <option>Nobrow</option>
+                <option>Norma</option>
+                <option>Novedi</option>
+                <option>Nuclea</option>
+                <option>Original Watts</option>
+                <option>Ototo</option>
+                <option>Panini Comics</option>
+                <option>Petit à petit</option>
+                <option>Petit Pierre & Ieiazel</option>
+                <option>Physalis</option>
+                <option>Pika</option>
+                <option>Pixi</option>
+                <option>Plastoy</option>
+                <option>Pocket</option>
+                <option>Point Image</option>
+                <option>Poivre Et Sel</option>
+                <option>Presque lune</option>
+                <option>Presse Aventure</option>
+                <option>P'Tit Glenat</option>
+                <option>P'Tit Louis</option>
+                <option>Rackham</option>
+                <option>Rebecca Rils</option>
+                <option>Rombaldi</option>
+                <option>Rue De Sèvres</option>
+                <option>Samji</option>
+                <option>Sandawe</option>
+                <option>Sarbacane</option>
+                <option>Seiko</option>
+                <option>Semic</option>
+                <option>Sergio Bonelli Editore</option>
+                <option>Seuil</option>
+                <option>Six Pieds Sous Terre</option>
+                <option>Snorgleux</option>
+                <option>Société Parisienne D'Édition</option>
+                <option>Soleil</option>
+                <option>Steinkis</option>
+                <option>Tabary</option>
+                <option>Tabou</option>
+                <option>Taifu Comics</option>
+                <option>Tanibis</option>
+                <option>Tapages Nocturnes</option>
+                <option>Tartamudo</option>
+                <option>Theloma</option>
+                <option>Tonkam</option>
+                <option>Toth Bd</option>
+                <option>Triomphe</option>
+                <option>Urban China</option>
+                <option>Urban Comics</option>
+                <option>Urban Comics Press</option>
+                <option>Usa Vagabondages</option>
+                <option>Vents d'Ouest</option>
+                <option>Vertige Graphic</option>
+                <option>Vide Cocagne</option>
+                <option>Vraoum</option>
+                <option>Vraoum !</option>
+                <option>Warum</option>
+                <option>Wetta</option>
+                <option>Worldwide</option>
+                <option>Xiao Pan</option>
+                <option>Zanpano</option>
+                <option>Zenda</option>
+                <option>Zephyr</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="serie">Série / Album – Issue</label>
+              <input
+                type="text"
+                id="serie"
+                name="serie"
+                placeholder="Ex. : Tintin – Le Secret de la Licorne, T.11"
+              />
+            </div>
+
+            <div class="field">
+              <label for="edition">Édition / Impression</label>
+              <select id="edition" name="edition">
+                <option value="">— Choisir —</option>
+                <option>Affiche</option>
+                <option>Édition originale</option>
+                <option>Ex-libris</option>
+                <option>Planche originale</option>
+                <option>Portfolio</option>
+                <option>Réédition</option>
+                <option>Sérigraphie</option>
+                <option>Tirage de luxe</option>
+                <option>Tirage de tête</option>
+                <option>Tirage limité</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="annee">Année</label>
+              <input
+                type="number"
+                id="annee"
+                name="annee"
+                inputmode="numeric"
+                placeholder="YYYY"
+                pattern="\d{4}"
+              />
+            </div>
+
+            <div class="field">
+              <label for="langue">Langue</label>
+              <select id="langue" name="langue">
+                <option value="">— Choisir —</option>
+                <option>allemand</option>
+                <option>anglais</option>
+                <option>coréen</option>
+                <option>dialecte</option>
+                <option>espagnol</option>
+                <option>français</option>
+                <option>italien</option>
+                <option>japonais</option>
+                <option>néerlandais</option>
+                <option>portugais</option>
+              </select>
+              <div id="dialecte-wrap" hidden>
+                <label for="dialecte">Préciser le dialecte</label>
+                <input
+                  type="text"
+                  id="dialecte"
+                  name="dialecte"
+                  placeholder="Ex. : bruxellois, occitan…"
+                />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="isbn">ISBN / EAN (optionnel)</label>
+              <div class="inline">
+                <input
+                  type="text"
+                  id="isbn"
+                  name="isbn"
+                  inputmode="numeric"
+                  placeholder="978…"
+                />
+                <button type="button" id="btn-isbn" class="secondary">
+                  Remplir depuis l’ISBN
+                </button>
+              </div>
+              <p class="help">
+                Utilise Open Library (public). Résultat éditable avant export.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Caractéristiques & Authenticité -->
+        <section aria-labelledby="sec-auth">
+          <h2 id="sec-auth">🧪 Caractéristiques &amp; Authenticité</h2>
+          <div class="grid">
+            <div class="field">
+              <label for="etat">État général</label>
+              <select id="etat" name="etat">
+                <option value="">— Choisir —</option>
+                <option value="neuf">Neuf</option>
+                <option value="excellent">Excellent état</option>
+                <option value="bon">Bon état</option>
+                <option value="defauts">Défauts visibles</option>
+                <option value="mauvais">Mauvais état</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="signature">Signature de l'auteur</label>
+              <select id="signature" name="signature">
+                <option value="">— Choisir —</option>
+                <option value="non">Non</option>
+                <option value="oui">Oui</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="dedicace">Dédicace de l'auteur</label>
+              <select id="dedicace" name="dedicace">
+                <option value="">— Choisir —</option>
+                <option value="non">Non</option>
+                <option value="oui">Oui</option>
+              </select>
+            </div>
+            <div class="field" id="dedicace-details-wrap" style="display: none">
+              <label>Détails de la dédicace</label>
+              <div class="dedicace-grid">
+                <div>
+                  <label
+                    ><input type="radio" name="dedicace-col1" value="petite" />
+                    Petite</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="dedicace-col1" value="moyenne" />
+                    Moyenne</label
+                  ><br />
+                  <label
+                    ><input
+                      type="radio"
+                      name="dedicace-col1"
+                      value="pleine page"
+                    />
+                    Pleine page</label
+                  >
+                </div>
+                <div>
+                  <label
+                    ><input type="radio" name="dedicace-col2" value="crayon" />
+                    Crayon</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="dedicace-col2" value="bic" />
+                    Bic</label
+                  ><br />
+                  <label
+                    ><input
+                      type="radio"
+                      name="dedicace-col2"
+                      value="tout en couleurs"
+                    />
+                    Tout en couleurs</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="field">
+              <label for="exlibris">Ex-libris (quantité)</label>
+              <input
+                type="number"
+                id="exlibris"
+                name="exlibris"
+                min="0"
+                step="1"
+                placeholder="Ex. : 0, 1, 2, 54…"
+              />
+            </div>
+            <div
+              id="exlibris-alert"
+              style="
+                display: none;
+                color: #e53e3e;
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+              "
+            ></div>
+            </div>
+            <div class="field" id="exlibris-details-wrap" style="display: none">
+              <label>Détails ex-libris</label>
+              <div class="exlibris-grid">
+                <div>
+                  <strong>Type :</strong><br />
+                  <label
+                    ><input type="radio" name="exlibris-type" value="signé" />
+                    Signé</label
+                  ><br />
+                  <label
+                    ><input
+                      type="radio"
+                      name="exlibris-type"
+                      value="numéroté"
+                    />
+                    Numéroté</label
+                  >
+                </div>
+                <div>
+                  <strong>Format :</strong><br />
+                  <label
+                    ><input
+                      type="radio"
+                      name="exlibris-format"
+                      value="marque-page"
+                    />
+                    Marque-page</label
+                  ><br />
+                  <label
+                    ><input
+                      type="radio"
+                      name="exlibris-format"
+                      value="autre format"
+                    />
+                    Autre format</label
+                  >
+                </div>
+                <div>
+                  <strong>Couleur :</strong><br />
+                  <label
+                    ><input type="radio" name="exlibris-couleur" value="nb" />
+                    N&amp;B</label
+                  ><br />
+                  <label
+                    ><input
+                      type="radio"
+                      name="exlibris-couleur"
+                      value="couleurs"
+                    />
+                    Couleurs</label
+                  >
+                </div>
+              </div>
+            </div>
+         <div class="field">
+  <label for="numerotation">Numérotation</label>
+  <input
+    type="text"
+    id="numerotation"
+    name="numerotation"
+    pattern="^\d+/\d+$"
+    placeholder="Ex. : 12/100"
+    title="Indique deux nombres séparés par un slash, ex : 12/100"
+    autocomplete="off"
+  >
+  <span id="numerotation-error" style="display:none; color:#e53e3e; font-size:0.95em;">
+    Format attendu : deux nombres séparés par un slash (ex : 12/100)
+  </span>
+</div>
+          </div>
+        </section>
+
+        <section aria-labelledby="sec-prix">
+            <!-- Profil -->
+        <section aria-labelledby="sec-profil">
+          <h2 id="sec-profil">👤 Profil d’usage</h2>
+          <div class="inline">
+            <label
+              ><input type="radio" name="profil" value="acheteur" checked />
+              Acheteur</label
+            >
+            <label
+              ><input type="radio" name="profil" value="vendeur" />
+              Vendeur</label
+            >
+          </div>
+        </section>
+          <h2 id="sec-prix">💶 Achat et vente</h2>
+
+          <!-- Ligne 1 : Mots-clés / Plateforme / URL -->
+          <div class="grid">
+            <div class="field">
+              <label for="motscles">Mots‑clés de recherche</label>
+              <input
+                type="text"
+                id="motscles"
+                name="motscles"
+                placeholder="Série, tome, édition, année, éditeur…"
+              />
+              <p class="help">
+                Utilisé pour la comparaison en ligne (peut inclure série, tome,
+                édition, année, éditeur).
+              </p>
+            </div>
+
+            <div class="field">
+              <label for="plateforme">Plateforme principale</label>
+              <select id="plateforme" name="plateforme">
+                <option value="">— Choisir —</option>
+                <option>2ememain.be</option>
+                <option>Delcampe</option>
+                <option>Catawiki</option>
+                <option>eBay</option>
+                <option>Facebook Marketplace</option>
+                <option>Vinted</option>
+                <option>Autre</option>
+              </select>
+              <div class="row" style="margin-top: 0.5rem">
+                <button type="button" id="btn-bareme" class="ghost">
+                  Barème plateforme (auto)
+                </button>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="url">URL annonce (optionnel)</label>
+              <input type="url" id="url" name="url" placeholder="https://…" />
+            </div>
+          </div>
+
+          <!-- Fieldset : Prix & frais -->
+          <fieldset class="fieldset" style="margin-top: 1rem">
+            <legend>Prix &amp; frais</legend>
+            <div class="grid">
+              <div class="field">
+                <label for="prix">Prix demandé (€)</label>
+                <input
+                  type="text"
+                  id="prix"
+                  inputmode="decimal"
+                  placeholder="0,00"
+                />
+              </div>
+              <div class="field">
+                <div class="field" id="field-pays">
+  <label for="pays">Pays de destination</label>
+  <select id="pays">
+    <option value="BE">Belgique</option>
+    <option value="FR">France</option>
+    <option value="NL">Pays-Bas</option>
+    <option value="DE">Allemagne</option>
+    <option value="LU">Luxembourg</option>
+    <option value="IT">Italie</option>
+    <!-- Ajoute d'autres pays si besoin -->
+  </select>
+</div>
+                <label for="frais">Frais d’envoi (€)</label>
+                <input
+                  type="text"
+                  id="frais"
+                  inputmode="decimal"
+                  placeholder="0,00"
+                />
+              </div>
+<div class="field vendeur-only">
+  <label for="commissionPct">Commission plateforme vendeur (%)</label>
+  <input type="text" id="commissionPct" inputmode="decimal" placeholder="0,00" />
+</div>
+<div class="field vendeur-only">
+  <label for="commissionFixe">Commission vendeur (fixe, €)</label>
+  <input type="text" id="commissionFixe" inputmode="decimal" placeholder="0,00" />
+</div>
+<div class="field vendeur-only">
+  <label for="taxesPct">Taxes / TVA (%) sur prix</label>
+  <input type="text" id="taxesPct" inputmode="decimal" placeholder="0,00" />
+</div>
+<div class="field acheteur-only">
+  <label for="buyerPct">Frais plateforme côté acheteur (%)</label>
+  <input type="text" id="buyerPct" inputmode="decimal" placeholder="0,00" />
+</div>
+<div class="field acheteur-only">
+  <label for="buyerFixe">Frais acheteur (fixe, €)</label>
+  <input type="text" id="buyerFixe" inputmode="decimal" placeholder="0,00" />
+</div>
+              </div>
+              </div>
+              <div class="field" id="fb-mode-wrap">
+                <label>Facebook — Mode de vente</label>
+                <div class="row">
+                  <label
+                    ><input type="radio" name="fbmode" value="local" checked />
+                    Locale (0 %)</label
+                  >
+                  <label
+                    ><input type="radio" name="fbmode" value="shipping" />
+                    Expédition (10 %)</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <details class="assumptions" style="margin-top: 0.5rem">
+              <summary>Hypothèses de calcul (clique pour afficher)</summary>
+              <ul>
+                <li>
+                  La <strong>commission vendeur (%)</strong> et les
+                  <strong>taxes (%)</strong> s’appliquent par défaut sur le
+                  <strong>prix demandé</strong> (hors frais d’envoi).
+                </li>
+                <li>
+                  Le <strong>net vendeur</strong> = prix − commission(%) −
+                  commission fixe − taxes(%).
+                </li>
+                <li>
+                  Le <strong>coût total acheteur</strong> = prix + frais d’envoi
+                  + taxes(%) + <strong>frais plateforme acheteur</strong> (%,
+                  fixe).
+                </li>
+                <li>
+                  La <strong>fourchette</strong> par défaut est ± 5 % autour du
+                  prix demandé.
+                </li>
+              </ul>
+            </details>
+          </fieldset>
+
+          <!-- Boutons & résultats (si tu les utilises déjà, garde tes IDs) -->
+          <div class="actions">
+            <button type="button" id="btn-compare" class="secondary">
+              Comparer les ventes en ligne
+            </button>
+            <div class="platforms">
+              <label
+                ><input type="checkbox" id="chk-2ememain" checked />
+                2ememain.be</label
+              >
+              <label
+                ><input type="checkbox" id="chk-delcampe" checked />
+                Delcampe</label
+              >
+              <label
+                ><input type="checkbox" id="chk-catawiki" checked />
+                Catawiki</label
+              >
+              <label
+                ><input type="checkbox" id="chk-ebay" checked /> eBay</label
+              >
+              <label
+                ><input type="checkbox" id="chk-fb" checked /> Facebook
+                Marketplace</label
+              >
+              <label>
+  <input type="checkbox" id="chk-vinted" checked>
+  Vinted
+</label>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button type="button" id="btn-calcul" class="primary">
+              Calculer le prix juste
+            </button>
+          </div>
+
+          <div class="results" aria-live="polite" aria-atomic="true">
+            <div class="result-item acheteur">
+              <strong>Coût total acheteur</strong> :
+              <span id="out-buyer">—</span>
+            </div>
+            <div class="result-item">
+              <strong>Prix juste recommandé (€)</strong> :
+              <span id="out-reco">—</span>
+            </div>
+            <div class="result-item">
+              <strong>Fourchette</strong> : <span id="out-range">—</span>
+            </div>
+            <div class="result-item vendeur">
+              <strong>Net vendeur</strong> : <span id="out-net">—</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Notes -->
+        <section aria-labelledby="sec-notes">
+          <h2 id="sec-notes">📝 Notes</h2>
+          <textarea
+            id="notes"
+            rows="6"
+            placeholder="Observations, provenance, défauts, liens vers preuves, etc."
+          ></textarea>
+          <div class="actions">
+            <button type="button" id="btn-analyser" class="secondary">
+              Analyser
+            </button>
+            <button type="button" id="btn-export" class="primary">
+              Générer la fiche (.html)
+            </button>
+          </div>
+        </section>
+      </form>
+    </main>
+
+    <footer class="container small muted">
+      @copyright Alessandro Rastelli 2025 (made with CoPilot 365)
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

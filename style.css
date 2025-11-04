@@ -1,0 +1,392 @@
+/* Grille responsives dédiées à "Achat et vente" */
+section[aria-labelledby="sec-prix"] > .grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+section[aria-labelledby="sec-prix"] .fieldset .grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 680px) {
+  section[aria-labelledby="sec-prix"] > .grid {
+    grid-template-columns: 1.2fr 1fr;
+  }
+  section[aria-labelledby="sec-prix"] .fieldset .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 980px) {
+  section[aria-labelledby="sec-prix"] > .grid {
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+  section[aria-labelledby="sec-prix"] .fieldset .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* ========== styles.css (inline) ========== */
+:root {
+  --bg: #0f0f12;
+  --card: #17171c;
+  --text: #f2f2f7;
+  --muted: #b3b3c0;
+  --accent: #3b82f6;
+  --accent-2: #22c55e;
+  --border: #2a2a33;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: system-ui, Segoe UI, Roboto, Helvetica, Arial,
+    "Segoe UI Variable", sans-serif;
+  line-height: 1.5;
+  color: var(--text);
+  background: radial-gradient(1200px 800px at 10% -10%, #1d2330, transparent),
+    radial-gradient(1000px 600px at 100% 0%, #141824, transparent), var(--bg);
+}
+.container {
+  width: min(1100px, 92vw);
+  margin: 2rem auto;
+}
+.lede {
+  color: var(--muted);
+  margin-top: 0.25rem;
+}
+.muted {
+  color: var(--muted);
+}
+.small {
+  font-size: 0.9rem;
+}
+header h1 {
+  margin-bottom: 0.25rem;
+}
+
+section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin: 1.25rem 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+section h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+/* ---- Mise en page dédiée à la section "Prix & Vente" ---- */
+
+/* ---- Mise en page dédiée à la section "Prix & Vente" (override fort) ---- */
+
+/* 1) Mots-clés / Plateforme / URL */
+section[aria-labelledby="sec-prix"] > .grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr; /* mobile */
+  align-items: start;
+}
+
+@media (min-width: 680px) {
+  section[aria-labelledby="sec-prix"] > .grid {
+    grid-template-columns: 1.2fr 1fr !important; /* tablette : 2 colonnes */
+    grid-auto-flow: row dense; /* compaction propre des éléments */
+  }
+}
+
+@media (min-width: 980px) {
+  section[aria-labelledby="sec-prix"] > .grid {
+    grid-template-columns: 1.4fr 1fr 1fr !important; /* desktop : 3 colonnes */
+  }
+}
+
+/* 2) Fieldset "Prix & frais" */
+section[aria-labelledby="sec-prix"] .fieldset .grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr; /* mobile */
+  align-items: start;
+}
+
+@media (min-width: 680px) {
+  section[aria-labelledby="sec-prix"] .fieldset .grid {
+    grid-template-columns: 1fr 1fr !important; /* tablette : 2 colonnes */
+  }
+}
+
+@media (min-width: 980px) {
+  section[aria-labelledby="sec-prix"] .fieldset .grid {
+    grid-template-columns: 1fr 1fr 1fr !important; /* desktop : 3 colonnes */
+  }
+}
+
+/* 3) Empêche les champs de forcer des retours à la ligne */
+section[aria-labelledby="sec-prix"] .field {
+  min-width: 0;
+}
+.field {
+  display: block;
+  gap: 0.4rem;
+}
+.field.compact {
+  margin-top: 0.5rem;
+}
+label {
+  font-weight: 600;
+}
+.help {
+  color: var(--muted);
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+}
+.inline {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.row {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="number"],
+select,
+textarea {
+  background: #0f0f14;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem 0.7rem;
+  outline: none;
+  width: 100%;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #7d8399;
+}
+textarea {
+  resize: vertical;
+}
+
+.fieldset {
+  border: 1px dashed var(--border);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.assumptions summary {
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin: 1rem 0;
+}
+.hint {
+  color: var(--muted);
+}
+.platforms {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  appearance: none;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+button.primary {
+  background: linear-gradient(135deg, var(--accent), #6ea8fe);
+  color: #0b1221;
+}
+button.secondary {
+  background: #0f1321;
+  color: var(--text);
+  border-color: var(--border);
+}
+button.ghost {
+  background: transparent;
+  color: var(--text);
+  border-color: var(--border);
+}
+button:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
+  background: #10131b;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.75rem;
+}
+.result-item {
+  background: #0c1018;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem 0.7rem;
+}
+.result-item.acheteur {
+  border-color: #1f4af0;
+}
+.result-item.vendeur {
+  border-color: #1b8a4b;
+}
+
+.kpi {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.kpi .tag {
+  font-size: 0.75rem;
+  color: #0b1221;
+  background: #9dd2ff;
+  border-radius: 999px;
+  padding: 0.1rem 0.5rem;
+}
+
+.note {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.sep {
+  height: 1px;
+  background: var(--border);
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 520px) {
+  .platforms {
+    flex-direction: column;
+  }
+}
+
+body {
+  font-family: system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  margin: 2rem;
+}
+h1 {
+  margin: 0.2rem 0 1rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 12px;
+}
+dt {
+  font-weight: 700;
+}
+dd {
+  margin: 0 0 0.6rem;
+}
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 8px;
+  margin-top: 8px;
+}
+.pill {
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  padding: 0.4rem 0.7rem;
+  background: #f8f8fb;
+}
+.muted {
+  color: #666;
+}
+.small {
+  font-size: 0.9rem;
+}
+
+section[aria-labelledby="sec-auth"] .grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes pour 3 champs alignés */
+}
+
+@media (max-width: 680px) {
+  section[aria-labelledby="sec-auth"] .grid {
+    grid-template-columns: 1fr; /* Sur mobile, chaque champ prend toute la largeur */
+  }
+}
+.dedicace-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.dedicace-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.exlibris-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+  margin-top: 0.5rem;
+}
+.exlibris-grid strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+  color: var(--accent, #3b82f6);
+}
+.exlibris-grid label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: normal;
+}
+#exlibris-alert {
+  color: #e53e3e;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+#numerotation-error {
+  color: #e53e3e;
+  font-size: 0.95em;
+  margin-top: 0.2em;
+}
+.vinted-only {
+  display: none;
+}
+.profil-vinted .vinted-only {
+  display: block;
+}
