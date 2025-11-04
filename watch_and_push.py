@@ -1,6 +1,8 @@
 import os
 import json
 import time
+from git import Git
+Git.refresh(path="C:/Program Files/Git/bin/git.exe")
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from git import Repo
