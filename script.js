@@ -455,16 +455,20 @@ updateChampsProfil();
     let options = "<option>— Choisir —</option>";
 
     if (editeursParType[typeChoisi]) {
-      // Éditeurs associés au type choisi, triés
-      const filtered = editeursParType[typeChoisi];
-      // Éditeurs non associés au type choisi, triés
+      const filtered = editeursParType[typeChoisi]
+        .slice()
+        .sort((a, b) => a.localeCompare(b, "fr", { sensitivity: "base" }));
+
       const others = allEditeurs
         .filter((e) => !filtered.includes(e))
         .sort((a, b) => a.localeCompare(b, "fr", { sensitivity: "base" }));
-      // Affiche d'abord les éditeurs du type, puis les autres
+
+      // Ajoute d’abord les éditeurs associés au type
       filtered.forEach(function (editeur) {
         options += `<option>${editeur}</option>`;
       });
+
+      // Puis les éditeurs non identifiés
       others.forEach(function (editeur) {
         options += `<option>${editeur}</option>`;
       });
