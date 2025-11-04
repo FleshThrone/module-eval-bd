@@ -1,6 +1,6 @@
 // URL of the raw file on GitHub
 const fileUrl =
-  "https://raw.githubusercontent.com/FleshThrone/module-eval-bd/main/Liste%20des%20%C3%A9diteurs.txt";
+  "https://raw.githubusercontent.com/FleshThrone/module-eval-bd/main/";
 
 // Function to fetch and display the file content
 function fetchFileContent() {
