@@ -454,25 +454,28 @@ updateChampsProfil();
     const typeChoisi = elType.value;
     let options = "<option>— Choisir —</option>";
 
+    // Liste complète des éditeurs
+    const tous = allEditeurs
+      .slice()
+      .sort((a, b) => a.localeCompare(b, "fr", { sensitivity: "base" }));
+
     // Liste des éditeurs associés au type
     const associés = editeursParType[typeChoisi] || [];
 
-    // Liste des éditeurs non identifiés
-    const nonIdentifiés = allEditeurs.filter((e) => !associés.includes(e));
-
-    // Tri alphabétique
+    // Tri des associés
     const triésAssociés = associés
       .slice()
       .sort((a, b) => a.localeCompare(b, "fr", { sensitivity: "base" }));
-    const triésNonIdentifiés = nonIdentifiés
-      .slice()
-      .sort((a, b) => a.localeCompare(b, "fr", { sensitivity: "base" }));
+
+    // Liste des éditeurs non identifiés
+    const nonIdentifiés = tous.filter((e) => !triésAssociés.includes(e));
 
     // Ajout des options dans l’ordre souhaité
     triésAssociés.forEach(function (editeur) {
       options += `<option>${editeur}</option>`;
     });
-    triésNonIdentifiés.forEach(function (editeur) {
+
+    nonIdentifiés.forEach(function (editeur) {
       options += `<option>${editeur}</option>`;
     });
 
