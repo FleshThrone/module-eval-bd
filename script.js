@@ -1,3 +1,4 @@
+console.log("Script loaded!");
 document.addEventListener("DOMContentLoaded", function () {
   const $ = (sel, ctx = document) => ctx.querySelector(sel);
   const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
