@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const btnCompare = $("#btn-compare");
     const btnCalcul = $("#btn-calcul");
     const btnExport = $("#btn-export");
-    btnBareme = $("#btn-bareme");
+    const btnBareme = $("#btn-bareme");
 
     elDedicace.addEventListener("change", function () {
       if (elDedicace.value === "oui") {
