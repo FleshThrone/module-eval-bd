@@ -1,4 +1,7 @@
-console.log("Script loaded!");
+console.log("Script file is being read!");
+window.addEventListener("error", function (e) {
+  console.error("Error caught:", e.error);
+});
 document.addEventListener("DOMContentLoaded", function () {
   const $ = (sel, ctx = document) => ctx.querySelector(sel);
   const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
@@ -493,9 +496,6 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("DOMContentLoaded", updateEditeurs);
     // Mets à jour la liste des éditeurs quand le type change
     elType.addEventListener("change", updateEditeurs);
-
-    // Mets à jour la liste au chargement de la page
-    updateEditeurs();
     const fbModeWrap = $("#fb-mode-wrap");
 
     const inputs = {
